@@ -25,7 +25,7 @@
         estudiante.Id = 1;
         estudiante.Nombres = "Carlos";
         estudiante.Apellidos = "Ramírez";
-        estudiante.Direccion = "Av. Siempre Viva 123";
+        estudiante.Direccion = "Av. Alvaro Noboa";
         estudiante.Telefonos[0] = "099999999";
         estudiante.Telefonos[1] = "098888888";
         estudiante.Telefonos[2] = "097777777";
