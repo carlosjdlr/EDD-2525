@@ -1,0 +1,15 @@
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\bin\Debug\net9.0\semana4.exe
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\bin\Debug\net9.0\semana4.deps.json
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\bin\Debug\net9.0\semana4.runtimeconfig.json
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\bin\Debug\net9.0\semana4.dll
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\bin\Debug\net9.0\semana4.pdb
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\semana4.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\semana4.AssemblyInfoInputs.cache
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\semana4.AssemblyInfo.cs
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\semana4.csproj.CoreCompileInputs.cache
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\semana4.sourcelink.json
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\semana4.dll
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\refint\semana4.dll
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\semana4.pdb
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\semana4.genruntimeconfig.cache
+c:\Users\USUARIO\Desktop\proyectos\EDD-2525-1\semana4\obj\Debug\net9.0\ref\semana4.dll
