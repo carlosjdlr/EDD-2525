@@ -70,4 +70,26 @@ class AgendaTelefonica
         Console.WriteLine("Contacto agregado correctamente.");
     }
 
+// Método para buscar un contacto por nombre 
+    static void BuscarContacto()
+    {
+        Console.Write("Ingrese el nombre a buscar: ");
+        string nombre = Console.ReadLine();
+        bool encontrado = false;
+
+        for (int i = 0; i < totalContactos; i++)
+        {
+            if (contactos[i].nombre.ToLower().Contains(nombre.ToLower()))
+            {
+                Console.WriteLine($"Nombre: {contactos[i].nombre}, Teléfono: {contactos[i].telefono}");
+                encontrado = true;
+            }
+        }
+
+        if (!encontrado)
+        {
+            Console.WriteLine("Contacto no encontrado.");
+        }
+    }
+
 }
