@@ -91,5 +91,35 @@ class AgendaTelefonica
             Console.WriteLine("Contacto no encontrado.");
         }
     }
+// Método para eliminar contactos
+    static void EliminarContacto()
+    {
+        Console.Write("Ingrese el nombre del contacto a eliminar: ");
+        string nombre = Console.ReadLine();
+        int indice = -1;
+
+        for (int i = 0; i < totalContactos; i++)
+        {
+            if (contactos[i].nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase))
+            {
+                indice = i;
+                break;
+            }
+        }
+
+        if (indice != -1)
+        {
+            for (int i = indice; i < totalContactos - 1; i++)
+            {
+                contactos[i] = contactos[i + 1];
+            }
+            totalContactos--;
+            Console.WriteLine("Contacto eliminado correctamente.");
+        }
+        else
+        {
+            Console.WriteLine("Contacto no encontrado.");
+        }
+    }
 
 }
