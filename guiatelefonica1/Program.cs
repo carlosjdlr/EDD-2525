@@ -121,5 +121,19 @@ class AgendaTelefonica
             Console.WriteLine("Contacto no encontrado.");
         }
     }
+// Método para mostrar todos los contactos 
+ static void MostrarContactos()
+    {
+        if (totalContactos == 0)
+        {
+            Console.WriteLine("La agenda está vacía.");
+            return;
+        }
 
+        Console.WriteLine("\n--- LISTA DE CONTACTOS ---");
+        for (int i = 0; i < totalContactos; i++)
+        {
+            Console.WriteLine($"{i + 1}. Nombre: {contactos[i].nombre}, Teléfono: {contactos[i].telefono}");
+        }
+    }
 }
