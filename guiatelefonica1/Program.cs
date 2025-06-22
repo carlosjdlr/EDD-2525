@@ -1,122 +1,53 @@
 ﻿
-using System;
-using System.Collections.Generic;
-
-namespace PhoneBookApp
+struct Contacto
 {
-    class Contact
+    public string nombre;
+    public string telefono;
+}
+
+class AgendaTelefonica
+{
+    const int MAX_CONTACTOS = 100;
+    static Contacto[] contactos = new Contacto[MAX_CONTACTOS];
+    static int totalContactos = 0;
+
+    static void Main()
     {
-        public string Name { get; set; }
-        public string PhoneNumber { get; set; }
-
-        public Contact(string name, string phoneNumber)
+        //interfaz de usuario
+        int opcion;
+        do
         {
-            Name = name;
-            PhoneNumber = phoneNumber;
-        }
+            Console.WriteLine("\n--- AGENDA TELEFÓNICA ---");
+            Console.WriteLine("1. Agregar contacto");
+            Console.WriteLine("2. Buscar contacto");
+            Console.WriteLine("3. Eliminar contacto");
+            Console.WriteLine("4. Mostrar todos los contactos");
+            Console.WriteLine("5. Salir");
+            Console.Write("Seleccione una opción: ");
+            opcion = int.Parse(Console.ReadLine());
 
-        public override string ToString()
-        {
-            return $"Nombre: {Name}, Teléfono: {PhoneNumber}";
-        }
+            switch (opcion)
+            {
+                case 1:
+                    AgregarContacto();
+                    break;
+                case 2:
+                    BuscarContacto();
+                    break;
+                case 3:
+                    EliminarContacto();
+                    break;
+                case 4:
+                    MostrarContactos();
+                    break;
+                case 5:
+                    Console.WriteLine("Saliendo del programa...");
+                    break;
+                default:
+                    Console.WriteLine("Opción inválida.");
+                    break;
+            }
+        } while (opcion != 5);
     }
 
-    class PhoneBook
-    {
-        private List<Contact> contacts = new List<Contact>();
-
-        public void AddContact(string name, string phoneNumber)
-        {
-            contacts.Add(new Contact(name, phoneNumber));
-        }
-
-        public void ShowContacts()
-        {
-            if (contacts.Count == 0)
-            {
-                Console.WriteLine("La agenda está vacía.");
-                return;
-            }
-
-            Console.WriteLine("Contactos en la agenda:");
-            foreach (var contact in contacts)
-            {
-                Console.WriteLine(contact);
-            }
-        }
-
-        public void SearchContact(string name)
-        {
-            var found = contacts.FindAll(c => c.Name.ToLower().Contains(name.ToLower()));
-            if (found.Count == 0)
-            {
-                Console.WriteLine("No se encontraron contactos.");
-            }
-            else
-            {
-                Console.WriteLine("Contactos encontrados:");
-                foreach (var contact in found)
-                {
-                    Console.WriteLine(contact);
-                }
-            }
-        }
-
-        public void DeleteContact(string name)
-        {
-            contacts.RemoveAll(c => c.Name.ToLower() == name.ToLower());
-            Console.WriteLine("Contacto(s) eliminado(s) si existían.");
-        }
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            PhoneBook phoneBook = new PhoneBook();
-            bool running = true;
-
-            while (running)
-            {
-                Console.WriteLine("\nAgenda Telefónica");
-                Console.WriteLine("1. Agregar contacto");
-                Console.WriteLine("2. Mostrar contactos");
-                Console.WriteLine("3. Buscar contacto");
-                Console.WriteLine("4. Eliminar contacto");
-                Console.WriteLine("5. Salir");
-                Console.Write("Seleccione una opción: ");
-                string option = Console.ReadLine();
-
-                switch (option)
-                {
-                    case "1":
-                        Console.Write("Nombre: ");
-                        string name = Console.ReadLine();
-                        Console.Write("Teléfono: ");
-                        string phone = Console.ReadLine();
-                        phoneBook.AddContact(name, phone);
-                        break;
-                    case "2":
-                        phoneBook.ShowContacts();
-                        break;
-                    case "3":
-                        Console.Write("Nombre a buscar: ");
-                        string searchName = Console.ReadLine();
-                        phoneBook.SearchContact(searchName);
-                        break;
-                    case "4":
-                        Console.Write("Nombre a eliminar: ");
-                        string deleteName = Console.ReadLine();
-                        phoneBook.DeleteContact(deleteName);
-                        break;
-                    case "5":
-                        running = false;
-                        break;
-                    default:
-                        Console.WriteLine("Opción inválida.");
-                        break;
-                }
-            }
-        }
-    }
 }
