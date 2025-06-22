@@ -50,4 +50,24 @@ class AgendaTelefonica
         } while (opcion != 5);
     }
 
+    static void AgregarContacto()
+    {
+        if (totalContactos >= MAX_CONTACTOS)
+        {
+            Console.WriteLine("La agenda está llena.");
+            return;
+        }
+
+        Console.Write("Ingrese el nombre: ");
+        string nombre = Console.ReadLine();
+        Console.Write("Ingrese el teléfono: ");
+        string telefono = Console.ReadLine();
+
+        contactos[totalContactos].nombre = nombre;
+        contactos[totalContactos].telefono = telefono;
+        totalContactos++;
+
+        Console.WriteLine("Contacto agregado correctamente.");
+    }
+
 }
