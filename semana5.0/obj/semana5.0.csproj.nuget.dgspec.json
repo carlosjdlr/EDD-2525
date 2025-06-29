@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5\\semana5.csproj": {}
+    "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5.0\\semana5.0.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5\\semana5.csproj": {
+    "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5.0\\semana5.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5\\semana5.csproj",
-        "projectName": "semana5",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5\\semana5.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5.0\\semana5.0.csproj",
+        "projectName": "semana5.0",
+        "projectPath": "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5.0\\semana5.0.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Desktop\\proyectos\\EDD-2525-1\\semana5.0\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
