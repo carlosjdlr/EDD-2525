@@ -30,6 +30,7 @@ class Program
             respuesta = Console.ReadLine()?.ToLower();
         }
 
-       
+        asignaturas.Sort((a, b) => a.Nombre.CompareTo(b.Nombre));
+
     }
 }
