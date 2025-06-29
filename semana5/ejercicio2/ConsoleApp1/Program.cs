@@ -11,6 +11,9 @@
             "Lengua"
         };
 
-        
+        foreach (string asignatura in asignaturas)
+        {
+            Console.WriteLine($"Yo estudio {asignatura}");
+        }
     }
 }
