@@ -53,3 +53,15 @@ public class ListaEnlazada
 
         Cabeza = anterior;
     }
+
+    public void Imprimir()
+    {
+        Nodo actual = Cabeza;
+        while (actual != null)
+        {
+            Console.Write(actual.Valor + " -> ");
+            actual = actual.Siguiente;
+        }
+        Console.WriteLine("null");
+    }
+}
