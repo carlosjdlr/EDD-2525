@@ -24,3 +24,17 @@ public class ListaEnlazada
             actual.Siguiente = nuevoNodo;
         }
     }
+
+    public int ContarElementos()
+    {
+        int contador = 0;
+        Nodo actual = Cabeza;
+        while (actual != null)
+        {
+            contador++;
+            actual = actual.Siguiente;
+        }
+        return contador;
+    }
+
+  
