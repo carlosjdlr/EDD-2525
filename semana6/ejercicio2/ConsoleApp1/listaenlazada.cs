@@ -37,4 +37,19 @@ public class ListaEnlazada
         return contador;
     }
 
-  
+    public void Invertir()
+    {
+        Nodo anterior = null;
+        Nodo actual = Cabeza;
+        Nodo siguiente = null;
+
+        while (actual != null)
+        {
+            siguiente = actual.Siguiente;
+            actual.Siguiente = anterior;
+            anterior = actual;
+            actual = siguiente;
+        }
+
+        Cabeza = anterior;
+    }
