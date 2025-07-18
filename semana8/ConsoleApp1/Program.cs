@@ -45,3 +45,14 @@
                 Console.WriteLine("Todos los asientos han sido ocupados.");
             }
         }
+         public void MostrarReporte()
+        {
+            Console.WriteLine("\n--- Reporte de Asientos Asignados ---");
+            for (int i = 0; i < asientosAsignados.Count; i++)
+            {
+                Console.WriteLine($"Asiento {i + 1}: {asientosAsignados[i].Nombre}");
+            }
+
+            Console.WriteLine($"\nAsientos disponibles: {capacidadMaxima - asientosAsignados.Count}");
+        }
+    }
