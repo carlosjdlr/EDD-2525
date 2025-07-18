@@ -56,3 +56,25 @@
             Console.WriteLine($"\nAsientos disponibles: {capacidadMaxima - asientosAsignados.Count}");
         }
     }
+     // Clase principal del sistema
+    class Sistema
+    {
+        static void Main(string[] args)
+        {
+            Atraccion atraccion = new Atraccion(30);
+
+            // Simulación: agregar personas a la fila
+            for (int i = 1; i <= 35; i++)
+            {
+                atraccion.AgregarPersonaAFila(new Persona($"Persona {i}"));
+            }
+
+            // Asignar asientos y mostrar reporte
+            atraccion.AsignarAsientos();
+            atraccion.MostrarReporte();
+
+            Console.WriteLine("\nPresione cualquier tecla para salir...");
+            Console.ReadKey();
+        }
+    }
+}

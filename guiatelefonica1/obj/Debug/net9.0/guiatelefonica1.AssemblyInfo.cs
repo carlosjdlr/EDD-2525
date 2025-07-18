@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("guiatelefonica1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e6893502bb7574d32b0690d224e3b8e2bfef355")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23b3c9b895dd7e4dabea6806bef56f74b503f8b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("guiatelefonica1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("guiatelefonica1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
