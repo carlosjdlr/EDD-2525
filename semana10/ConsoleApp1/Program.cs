@@ -26,9 +26,15 @@ class ProgramaVacunacion
         HashSet<string> soloAstraZeneca = new HashSet<string>(astrazeneca.Except(pfizer));
 
         // Resultados
-        Console.WriteLine("No vacunados: " + noVacunados.Count);
-        Console.WriteLine("Ambas dosis: " + ambasDosis.Count);
-        Console.WriteLine("Solo Pfizer: " + soloPfizer.Count);
-        Console.WriteLine("Solo AstraZeneca: " + soloAstraZeneca.Count);
+        Console.WriteLine("📌 Ciudadanos NO vacunados: " + noVacunados.Count);
+        Console.WriteLine("📌 Ciudadanos con ambas dosis: " + ambasDosis.Count);
+        Console.WriteLine("📌 Ciudadanos solo Pfizer: " + soloPfizer.Count);
+        Console.WriteLine("📌 Ciudadanos solo AstraZeneca: " + soloAstraZeneca.Count);
+
+        Console.WriteLine("\nEjemplo de NO vacunados:");
+        foreach (var c in noVacunados.Take(10)) Console.WriteLine(c);
+
+        Console.WriteLine("\nEjemplo de vacunados con ambas dosis:");
+        foreach (var c in ambasDosis.Take(10)) Console.WriteLine(c);
     }
 }
